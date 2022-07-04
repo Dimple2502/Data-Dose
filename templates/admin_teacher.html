@@ -1,0 +1,81 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Admin Portal</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<!-- <script src="../static/myScript.js"></script> -->
+	<link rel="stylesheet" href="../static/style1.css"> 
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" -->
+
+	
+	<!-- modal script -->
+
+	<!-- <script>
+		function openForm() {
+		  document.getElementById("modal_container").style.display = "block";
+		}
+		function closeForm() {
+		  document.getElementById("modal_container").style.display = "none";
+		}
+	  </script> -->
+
+</head>
+<body>
+	
+		<div class="wrapper">
+			<div class="sidebar">
+				<form action="/new/logout" >
+				<h2>Admin Portal</h2>
+				<ul>
+					<li  class="active"><a href="#"><i class="fas fa-user-plus"></i>Edit Teacher</a></li>
+					<li><a href="/profile/s_admin"><i class="fas fa-user-graduate"></i>Edit Student</a></li>
+					<li><input type="submit" name= "logout" value="Logout" class="btn"></i></input></li>
+				</ul>
+				</form>
+			</div>
+			<div class="main_content">
+					
+				<div class="table">	
+						
+						<table id="table" style="width: 50%;">
+
+						<tr>
+							<th>Registration ID</th>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Username</th>
+							<th>Password</th>
+							<th>Date of birth</th>
+							<th>Actions</th>
+							
+						</tr>
+						<!-- <form action="/profile/admin"> -->
+						{% for row in teacher %}
+						<tr>
+							<td>{{row.0}}</td>
+							<td>{{row.1}}</td>
+							<td>{{row.2}}</td>
+							<td>{{row.3}}</td>
+							<td>{{row.4}}</td>
+							<td>{{row.5}}</td>
+							<td>
+								<a href="{{url_for('update_teacher', id = row.0)}}" class="btn" id="open">Update</a>
+								<a href="/delete/teacher/{{row.0}}" class="btn btn-outline-dark btn-sm mx-1">Delete</button></a>
+
+							</td>
+						</tr>
+						{% endfor %}
+						<!-- </form> -->
+						</table>
+					</div>	
+			</div>
+		</div>	
+</body>
+</html>

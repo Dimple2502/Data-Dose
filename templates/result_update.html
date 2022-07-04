@@ -1,0 +1,103 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Teacher Portal</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="../static/style1.css"> 
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+    <style>
+        ::placeholder {
+          color: rgb(255, 255, 255);
+          opacity: 1; /* Firefox */
+        }
+        
+        </style>
+</head>
+<body>
+		<div class="wrapper">
+			<div class="sidebar">
+				<form action="/new/logout">
+				<h2>Teacher Portal</h2>
+				<ul>
+					<li><a href="#"><i class="fas fa-info"></i>Student Details</a></li>
+					<li class="active"><a href="#"><i class="fas fa-poll"></i>Result</a></li>
+					<li><a href="#"><i class="fas fa-plus"></i>Course</a></li>
+					<li><a href="#"><i class="fas fa-calendar-alt"></i>Routine</a></li>
+                    <li><input type="submit" name= "logout" value="Logout" class="btn"></i></input></li>
+				</ul>
+				</form>
+			</div>
+		</div>
+
+        <header>
+           
+    
+        <main>
+            <form action="" method="post">
+    
+    
+                <div class="register">         
+                    
+            <h1>Result</h1>
+    <hr><br>
+               
+    <p>Registration Id: <input type="text" class="txt" name="reg_id" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter Registration ID" cols="30" rows="6" required></p><br>
+    <p>Attendance: <input type="text" class="txt" name="attendance" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter attendance" cols="30" rows="6" required></p><br>      
+    <div class="grid-container">
+             <div class="ia1">
+                 <h3>IA1</h3><hr><br>
+             <p>EP-1: <input type="text" class="txt" name="ep1_ia1" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+             <p>EC-1: <input type="text" class="txt" name="ec1_ia1" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+             <p>EM-1: <input type="text" class="txt" name="em1_ia1" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" required cols="30" rows="6"></p><br>
+             <p>EM: <input type="text" class="txt" name="em_ia1" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>BEE: <input type="text" class="txt" name="bee_ia1" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+        </div>
+        <div class="ia2">
+            <h3>IA2</h3><hr><br>
+            <p>EP-1: <input type="text" class="txt" name="ep1_ia2" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EC-1: <input type="text" class="txt" name="ec1_ia2" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM-1: <input type="text" class="txt" name="em1_ia2" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM: <input type="text" class="txt" name="em_ia2" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>BEE: <input type="text" class="txt" name="bee_ia2" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+        </div>
+        <div class="ia2">
+            <h3>Term-Work</h3><hr><br>
+            <p>EP-1: <input type="text" class="txt" name="ep1_tw" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EC-1: <input type="text" class="txt" name="ec1_tw" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM-1: <input type="text" class="txt" name="em1_tw" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM: <input type="text" class="txt" name="em_tw" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>BEE: <input type="text" class="txt" name="bee_tw" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+        </div>
+            <div class="ia2">
+                <h3>SEM1</h3><hr><br>
+            <p>EP-1: <input type="text" class="txt" name="ep1_sem" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EC-1: <input type="text" class="txt" name="ec1_sem" style="background-color:rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM-1: <input type="text" class="txt" name="em1_sem" style="background-color:rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>EM: <input type="text" class="txt" name="em_sem" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>BEE: <input type="text" class="txt" name="bee_sem" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter marks" cols="30" rows="6" required></p><br>
+            <p>SEM-1: <input type="text" class="txt" name="sem1_final" style="background-color: rgba(129, 113, 138, 0.616); color: white; border-radius: 5px; border: 2px solid white;" placeholder="Enter CGPA" cols="30" rows="6" required></p><br>
+        </div>
+        </div>
+            
+        
+                    <br><br>
+            <div class="reg">
+            <a href="#" class="btnp" style="position: absolute; left: 70%;">Back</a>
+            <input type="submit" value="Update" name="action" id="update" class="btnp">
+            </form>
+        </div>
+        </div>
+       
+       
+        </main>
+    
+    </header>
+
+</body>
+</html>

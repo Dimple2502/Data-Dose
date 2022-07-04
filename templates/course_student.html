@@ -1,0 +1,59 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Student Portal</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="../static/style1.css"> 
+    <style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+        input[type=reset]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrapper">
+			<div class="sidebar">
+                <form action = "/new/logout">
+				<h2>Student Portal</h2>
+				<ul>
+					<li><a href="#"><i class="fas fa-plus"></i>Student Details</a></li>
+					<li><a href="#"><i class="fas fa-poll"></i>Result</a></li>
+					<li  class="active"><a href="#"><i class="fas fa-bookmark"></i>Course</a></li>
+					<li><a href="#"><i class="fas fa-calendar-alt"></i>Routine</a></li>
+                    <li><input type="submit" name= "logout" value="Logout" class="btn"></i></li>
+				</ul>
+                </form>
+                </div>
+                <div class="main_content">
+					
+				<div class="table">
+			
+						
+						<table id="table" style="width: 25%;">
+						
+
+						<tr>
+							<th>Subject ID</th>
+							<th>Subject name</th>
+							<th>Teacher name</th>                       
+						</tr>
+						{% for row in course %}
+						<tr>
+							<td >{{row.0}}</td>
+							<td >{{row.1}}</td>
+							<td>{{row.2}}</td>
+						</tr>
+                       
+						{% endfor %}
+						</table>
+					</div>			
+			</div>
+</body>
+</html>

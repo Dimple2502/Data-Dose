@@ -1,0 +1,97 @@
+<html>
+
+<head>
+
+	<title>Data Dose</title>
+
+	<link rel="stylesheet" href="../static/style.css">
+	<link rel="stylesheet" href="../static/font-awesome/css/all.css">
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		  position: absolute;
+		  top: 150%;
+		  left: 50%;
+	      transform: translate(-50%,-50%);
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="main">
+
+			<div class="logo">
+				<img src="../static/media/logo.png">
+
+			</div>
+
+			<form action="/" method="get">
+				
+			<ul>
+				<li class="active"><a href="login.html">Home</a></li>
+				<li><form action="/new"><a href="http://127.0.0.1:5000/new">Register</a></form></li>
+				<li><a href="http://127.0.0.1:5000/about">About</a></li>
+				<li><a href="http://127.0.0.1:5000/team">Team</a></li>
+				<li><a href="http://127.0.0.1:5000/help">Help</a></li>
+			</ul>
+			</form>
+		</div>
+		<div class="title">
+			<h1>Data Dose</h1>
+			<h4 style="text-align:center">Student Database Management</h4>
+		</div>
+		<form action="" method="post">
+			
+		<div class="content">
+			
+			<select id="mySelect" name="dropdwn" class="drpdwn">
+				<option value="select">Select User</option>
+				<option value="admindrp">Admin</option>
+				<option value="teacherdrp">Teacher</option>
+				<option value="studentdrp">Student</option>
+			</select><br><br>
+		
+		</div>
+
+		<div class="enter">
+		<!-- <form action="" method="post"> -->
+			
+				<i class="fas fa-user" style="color:rgb(255, 255, 255); padding-right: 15px; font-size: 25px;"></i>
+				<input type="text" autocomplete="off" class="txt" style="font-size: 20px; color: white; padding: 10px 35px; background-color: transparent; border-radius: 5px; border: 3px solid white;" placeholder="Enter Username" name="username" required><br><br>
+				<i class="fas fa-unlock-alt" style="color:rgb(255, 255, 255); padding-right: 15px; font-size: 25px;"></i>
+				<input type="password" autocomplete="off" class="txt" style="font-size: 20px; padding: 10px 35px; color: white; background-color: transparent; border-radius: 5px; border: 3px solid white;" placeholder="Enter Password" name="password" required id="myInput"><br><br>
+		
+				<label class="container">Show Password
+					<input type="checkbox" style="position: relative;" onclick="myFunction()">  <span class="checkmark"></span>
+				</label>
+				<!-- <p style="color: #fff; display: inline; position: relative; left: 20%;"> Show Password </p> -->
+				<script>
+					function myFunction() {
+						var x = document.getElementById("myInput");
+						if (x.type === "password") {
+							x.type = "text";
+						} else {
+							x.type = "password";
+						}
+					}
+				</script>
+					<!-- <div class="button"> -->
+						<input type="submit" value="Login" class="btn" style="top: 140%; left: 55%;">
+						
+
+		
+		</div>
+
+	</form>
+
+	<header>
+</body>
+
+</html>

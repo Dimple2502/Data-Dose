@@ -1,0 +1,82 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Student Portal</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="../static/style1.css"> 
+    <style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+        input[type=reset]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrapper">
+			<div class="sidebar">
+                <form action = "/new/logout">
+				<h2>Student Portal</h2>
+				<ul>
+					<li  class="active"><a href="#"><i class="fas fa-plus"></i>Student Details</a></li>
+					<li><a href="#"><i class="fas fa-poll"></i>Result</a></li>
+					<li><a href="{{url_for('course_student')}}"><i class="fas fa-bookmark"></i>Course</a></li>
+					<li><a href="#"><i class="fas fa-calendar-alt"></i>Routine</a></li>
+                    <li><input type="submit" name= "logout" value="Logout" class="btn"></i></li>
+				</ul>
+                </form>
+			</div>
+            <div class="main_content">
+                <hr>
+                <div class="header"><h2>STUDENT DETAILS</h2></div>
+                <div class="info">
+                    <div>
+                        <main>
+                        <form action="" method="post">                       
+                            <hr><br>                      
+                            <div class="enter">                            
+                            <p>First Name: <input type="text" class="txt" name="fname" placeholder="Enter First Name" required></p><br>
+                            <p>Last Name: <input type="text" class="txt" name="lname" placeholder="Enter Last Name" required></p><br>
+                            <p>Father's Name: <input type="text"class="txt"  name="f_name" placeholder="Enter Father's Name" required></p><br>
+                            <p>Mother's Name: <input type="text" class="txt" name="m_name" placeholder="Enter Mother's Name" required></p><br>
+                            <p>Date of Birth: <input type="date" class="txt" name="date_of_birth" required></p><br>
+                            <p>Gender:</p><br>
+                            <p>Male: <input type="radio" class="txt" name="gen" id="optm" value="Male" required> Female: <input type="radio" name="gen" id="optf" value="Female" required></p><br>
+                            <p>Address: <textarea name="address" class="txt" id="address" cols="30" rows="5" placeholder="Enter Address" required></textarea><br><br>
+                            <p>Phone Number: <input type="number" class="txt" name="phone_number" placeholder="Enter Phone Number" required></p><br>
+                            <p>Registration ID: <input type="number" class="txt" name="reg_id" placeholder="Enter Registration ID" required></p><br>
+                            <p>Branch: 
+                                <select name="branchdrp" class="txt" id="branch" required>
+                                    <option>--Select Branch--</option>
+                                    <option value="AI-DS">AI-DS</option>
+                                    <option value="CYSE">CYSE</option>
+                                </select>
+                            </p><br>
+                            <p>Roll No.: <input type="number" class="txt" name="roll_number" placeholder="Enter Roll No." required></p><br>
+                            <hr><br>
+                            <h2>UPLOAD DOCUMENTS</h2><br>
+                            <hr><br>
+                            <p>Aadhar Card: <input type="file" class="txt" style="color: white;" name="aadhar_card"></p><br>
+                            <p>SSC Marksheet: <input type="file" class="txt" style="color: white;" name="ssc_marksheet"></p><br>
+                            <p>HSC Marksheet: <input type="file" class="txt" style="color: white;" name="hsc_marksheet"></p><br>
+                            <p>Leaving Cerificate: <input type="file" class="txt" style="color: white;" name="leaving_certificate"></p><br>
+                            <p>Photosign: <input type="file" class="txt" style="color: white;" name="photosign"></p><br>
+                        </div> 
+                            <div class="button">                           
+                                    <!-- <a href="#" class="btn">submit</a> -->
+                                    <!-- <a href="#" class="btn"> -->
+                                    <input type="submit" name="click" value="Submit" class="btn">
+                                    <input type="reset" class="btn" value="Reset">
+                                </div>
+                            </div>
+                        </form>
+                    </main></div>
+                </div>
+            </div>
+</body>
+</html>

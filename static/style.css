@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(media/1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+ul li input{
+	color:rgb(255, 255, 255)
+}
+
+ul li a:hover{
+	/* background-color: white; */
+	border: 2px solid #fff;
+	color: rgb(255, 255, 255);
+}
+
+ul li.active a{
+		background-color: transparent;
+		border: 2px solid #fff;
+		box-shadow: 0 0 10px rgb(230, 230, 230);
+	color: rgb(255, 255, 255);
+}
+.title{
+	position: absolute;
+	top: 20%;
+	left:50.5%;
+	transform: translate(-50%,-50%);
+}
+
+.title h1{
+	color: white;
+	font-size: 70px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.title h4{
+	color: white;
+	font-size: 20px;
+}
+
+.content{	
+	position: absolute;
+	top: 40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color: rgb(0, 0, 0);
+	/* background-color: rgba(255, 255, 255, 0.849); */
+}
+
+.drpdwn{
+	
+	background-color: rgba(255, 255, 255, 0.849);
+	border-radius: 5px;
+	padding: 15px 35px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;   
+	font-size: 17px;
+} 
+
+
+.drpdwn:hover{
+	background-color: none;
+	color: rgb(0, 0, 0);
+	transition: 0.6s ease;
+}
+		
+.enter{
+    position: absolute;
+	top: 60%;
+	left:49%;
+	transform: translate(-50%,-50%);
+	color: #000;
+}
+
+.txt{
+	border: 2px solid white;
+	padding: 15px 40px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;    
+}	
+
+.txt:hover{
+	
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+	transition: 0.6s ease;
+}	
+/* .button{
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}	 */
+
+.btn{
+	border: 1.6px solid white;
+	box-shadow: 0 0 10px white;
+	padding: 20px 40px;
+	color: white;
+	text-decoration: none; 
+	font-size: 20px;  
+	
+}	
+
+.btn:hover{
+	background-color: white;
+	color: rgb(0, 0, 0);
+	transition: 0.3s ease;
+}
+
+.info{	
+	position: absolute;
+	top: 60%;
+	left:35%;
+	padding: 3px;
+	font-size: 20px;
+	transform: translate(-50%,-50%);
+	color: rgb(248, 245, 245);
+}
+
+.help{	
+	position: absolute;
+	top: 60%;
+	left:30%;
+	transform: translate(-50%,-50%);
+	color: rgb(248, 245, 245);
+	border: 1px solid white;
+	padding: 20px;
+	font-size: 18px;
+}
+
+.video{
+	position: absolute;
+	top: 10%;
+	left: 110%
+}
+
+.logo img{
+	float: left;
+	width:200px;
+	height: auto;
+}
+
+.main{
+	max-width: 1450px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.image img{
+	position: absolute;
+	top: 73%;
+	left: 84%;
+	transform: translate(-50%,-50%);
+	width:420px;
+	height: auto;
+}
+
+.team{	
+	position: absolute;
+	top: 15%;
+	left:5%;
+	padding: 3px;
+	font-size: 20px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	color:rgb(248, 245, 245);
+}
+
+.dimple{
+	position: absolute;
+	top: 50px;
+	left:30px;
+	border: 2px solid #fff;
+	
+}
+
+.dim{
+	position: relative;
+	top: 160px;
+	left:190px;
+
+}
+
+.farhat{
+	position: absolute;
+	top: 50px;
+	left: 650px;
+	border: 2px solid #fff;
+}
+
+.far{
+	position: relative;
+	top: 70px;
+	left:810px;
+
+}
+
+.rohit{
+	position: absolute;
+	top:300px;
+	left:340px;
+	border: 2px solid #fff;
+}
+
+.roh{
+	position: relative;
+	top: 230px;
+	left:500px;
+
+}
+
+.jinay{
+	position: absolute;
+	top:300px;
+	left:940px;
+	border: 2px solid #fff;
+}
+
+.jin{
+	position: relative;
+	top: 140px;
+	left:1100px;
+
+}
+
+.register{
+	border: 1px solid white;
+	padding: 15px 15px;
+	text-decoration: none; 
+	font-size: 18px;  
+	top: 50%;
+	left: 50%;
+    position: absolute ;
+	transform: translate(-50%,-50%);
+	color: rgb(255, 255, 255);
+}
+
+.txt{
+	border: 1px solid transparent;
+	padding: 5px 5px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;    
+}	
+
+.txt:hover{
+	background-color: white;
+	color: #000;
+	transition: 0.6s ease;
+}	
+
+.reg{
+	position: absolute;
+	top: 92%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+/* checkbox */
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 18px;
+	top: 75%;
+	left: 30%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: white;
+	
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-color: transparent;
+	border: 1px solid white;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+	background-color: #7859a0;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 4px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }

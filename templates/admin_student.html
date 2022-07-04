@@ -1,0 +1,76 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Edit Student</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="../static/style1.css"> 
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+		<div class="wrapper">
+			<div class="sidebar">
+				<form action="/new/logout">
+				<h2>Admin Portal</h2>
+				<ul>
+					<li><a href="/profile/admin"><i class="fas fa-user-plus"></i>Edit Teacher</a></li>
+					<li class="active"><a href="#"><i class="fas fa-user-graduate"></i>Edit Student</a></li>
+					<!-- <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+					<li><a href="#"><i class="fas fa-list"></i>Logs</a></li> -->
+					<li><input type="submit" name= "logout" value="Logout" class="btn"></i></input></li>
+				</ul>
+				</form>
+			</div>
+			<div class="main_content">
+					<!-- <a href="#" class="btn">Register Student</a>
+					<a href="#" class="btn">Delete Student</a> -->
+				<div class="table">
+			
+						
+						<table id="table" style="width: 25%;">
+						<tr>
+							<th>Registration ID</th>
+							<th>Name</th>
+							<th>Phone Number</th>
+							<th>Username</th>
+							<th>Password</th>
+							<th>Date of birth</th>
+							<th>Actions</th>
+							
+						</tr>
+						{% for row in student %}
+						<tr>
+							<td >{{row.0}}</td>
+							<td >{{row.1}}</td>
+							<td>{{row.2}}</td>
+							<td>{{row.3}}</td>
+							<td>{{row.4}}</td>
+							<td>{{row.5}}</td>
+							<td>
+								<a href="{{url_for('update_student', id = row.0)}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</button></a>
+								<a href="/delete/student/{{row.0}}" class="btn btn-outline-dark btn-sm mx-1">Delete</button></a>
+							  
+							</td>
+						</tr>
+						{% endfor %}
+					
+						</table>
+
+						</body>
+						</html>
+					</div>
+
+
+				
+			</div>
+		</div>	
+</body>
+</html>

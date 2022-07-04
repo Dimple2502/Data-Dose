@@ -1,0 +1,77 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Teacher Portal</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link rel="stylesheet" href="../static/style1.css"> 
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+		<div class="wrapper">
+			<div class="sidebar">
+				<form action="/new/logout">
+				<h2>Teacher Portal</h2>
+				<ul>
+					<li class="active"><a href="#"><i class="fas fa-info"></i>Student Details</a></li>
+					<li><a href="#"><i class="fas fa-poll"></i>Result</a></li>
+					<li><a href="{{url_for('course_teacher')}}"><i class="fas fa-plus"></i>Course</a></li>
+					<li><a href="#"><i class="fas fa-calendar-alt"></i>Routine</a></li>
+                    <li><input type="submit" name= "logout" value="Logout" class="btn"></i></input></li>
+				</ul>
+				</form>
+			</div>
+			<div class="main_content">
+				<div class="table">
+					
+						
+						<table id="marks">
+						
+						<tr>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Father's Name</th>
+                            <th>Mother's Name</th>
+                            <th>Date of Birth</th>
+                            <th>Gender</th>
+                            <th>Male</th>
+							<th>Address</th>
+                            <th>Phone Number</th>
+                            <th>Registration ID</th>
+                            <th>Branch</th>
+                            <th>Roll No.</th>                       
+                            <th>Actions</th>
+           
+						</tr>
+						<tr>
+							<td >15000</td>
+							<td >Jinay Vora</td>
+							<td>9012345678</td>
+							<td>jinayv@gmail.com</td>
+							<td>1703</td>
+							<td>17-03-2002</td>
+                            <td>17-03-2002</td>
+                            <td>17-03-2002</td>
+                            <td>17-03-2002</td>
+                            <td>17-03-2002</td>
+                            <td>17-03-2002</td>
+                            <td>17-03-2002</td>                      
+							<td>
+								<a href="{{url_for('update_course', id = row.0)}}" class="btn" id="open">View</a>
+                            </td>
+
+						</tr>
+						
+						</table>
+
+						
+					</div>		
+			</div>
+		</div>
+</body>
+</html>

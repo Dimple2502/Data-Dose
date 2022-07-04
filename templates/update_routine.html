@@ -1,0 +1,45 @@
+<html lan="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Update Routine</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<!-- <script src="../static/myScript.js"></script> -->
+	<link rel="stylesheet" href="../static/style1.css"> 
+	<style> 
+		input[type=submit]{
+		  background: none;
+		  font-size:17px;
+		  cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+			<div class="main_content">
+				
+				<div class="modal-container" id="modal_container">
+					<form action="" method="post">
+						<div class="form-group">
+							<br><h2>ROUTINE</h2><br><hr><br>
+							<p>Time: <input type="text" value="{{data.0}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="sub_id" placeholder="Update Registration ID" required></p><br><br>
+							<p>Monday: <input type="text" value="{{data.1}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="sub_name" placeholder="Update name" required></p><br><br>
+							<p>Tuesday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+                            <p>Wednesday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+                            <p>Thursday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+                            <p>Friday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+                            <p>Saturday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+                            <p>Sunday: <input type="text" value="{{data.2}}" class="txtp" style="padding: 8px 15px; font-size: 15px;" name="teacher_name" placeholder="Update Phone Number" cols="30" rows="6" required></p><br><br>
+
+							<br>
+								<div class="reg">
+									<button type="submit" class="btnp" id="submit" style="font-size: 17px;">Submit</button>
+									<button onclick="window.location.href='{{url_for('profile_admin')}}';" class="btnp" type="button" id="closep" style="font-size: 17px;">Close</button>
+								</div>
+						</div>
+						
+					</form>
+				</div>
+				
+				</div>		
+</body>
+</html>
